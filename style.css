@@ -146,3 +146,25 @@ padding: 20px;
     margin-right: 0.5rem;
     width: 20px;
 }
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-text{
+    flex:1;
+
+}
+/*On phone, stack them again*/
+@media(max-width:768px){
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+}
