@@ -1,153 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leleti Gara Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leleti Gara | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<nav>
-<h2 class="logo">Software Engineer Portfolio 💻👩‍💻</h2>
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><button onclick="toggletheme()"> ☀ </button></li>
-</ul>
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-</nav>
+  <div class="logo">MyPortfolio</div>
+
+  <nav id="nav" aria-label="Main Navigation">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div>
+    <span class="toggle-btn" id="themeToggle">🌙</span>
+    <span class="hamburger" id="menuToggle">☰</span>
+  </div>
 </header>
 
-<section class="hero" id="about">
-<div class="hero-content">
+<!-- HERO SECTION -->
+<section id="hero">
+    <img src="profile.jpg" alt="Leleti Gara" class="profile-pic">
+  <h1>Hi, I'm Leleti 👋</h1>
+  <p>A passionate Software Engineering Student</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
 
-<div class="text">
-<p class="intro">Hi, I'm</p>
-<h1>Leleti E Gara</h1>
-<p class="role">Software Engineer👩‍💻</p>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      My name is Leleti Gara. I am a Software Engineering student currently in my second year at Midlands State University.
+      What started as curiosity quickly turned into something I truly enjoy — solving problems through code and building applications that people can actually use.
+      I enjoy challenging myself with new projects, learning new tools, and pushing my creativity to the next level.
+      My goal is to grow into a professional software developer who can design and build modern, user-friendly, and impactful digital solutions.
+    </p>
+    
+  </div>
 
-<p class="description">
-I am a Software engineering student currently in her second year at Midlands State University with a strong passion for programming and building modern, responsive web applications.
-What started as curiosity quickly turned into something i truly enjoy that is solving problems through code and building applications that people can actually use. 
-i enjoy challenging myself with new projects, learning new tools and pushing my creativity to the next level.
-My goal is to grow into a professional software developer who can design and build modern, user-friendly and impactful digital solutions.
-</p>
+  <div class="counters">
 
-<div class="buttons">
-<a href="#projects" class="btn primary">View My Work</a>
-<a href="#contact" class="btn outline">Contact Me</a>
-</div>
+  <div class="counter-box">
 
-<div class="counters">
-<div class="counter-box">
-<h2 class="counter" data-target="3">0</h2>
-<p>Projects</p>
-</div>
+    <span>Projects</span>
+    <h2 class="counter" data-target="3">3+</h2>
+    
+  </div>
 
-<div class="counter-box">
-<h2 class="counter" data-target="5">0</h2>
-<p>Skills</p>
-</div>
+  <div class="counter-box">
 
-<div class="counter-box">
-<h2 class="counter" data-target="2">0</h2>
-<p>Years Learning</p>
-</div>
-</div>
+    <span>Skills</span>
+    <h2 class="counter" data-target="7">7</h2>
+    
+  </div>
 
-</div>
+  <div class="counter-box">
 
-<div class="image">
-<img src="profile.jpg" alt="Leleti Gara" class="hero-image">
-</div>
+    <span>Years Learning</span>
+    <h2 class="counter" data-target="2">2</h2>
+   
+  </div>
 
-</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Visual Basic</span>
+    <span>Git Hub</span>
+    <span>MySQL</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>A personal website showcasing my skills and projects.</p>
+  </div>
+
+  <div class="card">
+    <h3>Online Car Auctioning System</h3>
+    <p>Online platform for buying and selling cars(currently in progress).</p>
+  </div>
+
+  <div class="card">
+    <h3>Weather App</h3>
+    <p>Real-time weather application using APIs.</p>
+  </div>
+
 </section>
 
 <section id="certificates">
-<h2>🏆Certificates🏆</h2>
-<div class="certificates-container"></div>
-<div class="cert-card" onclick="openModal('Web Development','web-dev-certificate.png.jpg')"></div>
-<img src="certificates/web-dev-certificate.png.jpg" alt=" DB Certificate" width="100%"
+  <h2>🏆 Certificates 🏆</h2>
 
+  <div class="certificates-container">
 
+    <div class="cert-card" onclick="openModal('Database Certificate','certificates/web-dev-certificate.jpg')">
+      <img src="certificates/web-dev-certificate.jpg" alt="Database Certificate">
+    </div>
 
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills-container">
-<div class="card">HTML</div>
-<div class="card">CSS</div>
-<div class="card">JavaScript</div>
-<div class="card">GitHub</div>
-<div class="card">Python</div>
-<div class="card">Visual Basic (Visual Programming)</div>
-</div>
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-<div class="projects-container">
-<div class="project">
-<h3>Car Auction System</h3>
-<p>Online platform for buying and selling cars.</p>
-</div>
-
-
-
-<div class="project">
-<h3>Weather App</h3>
-<p>Real-time weather application using APIs.</p>
-</div>
-
-<div class="project">
-<h3>Portfolio Website</h3>
-<p>Personal website showcasing my work.</p>
-</div>
-</div>
+  </div>
 </section>
 
 <section id="contact">
-<h2>Contact Me</h2>
-<p> Feel free to contact me on the channels below. </p>
-<form id="contactForm">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
+  <h2>Contact</h2>
+  <p>Feel free to contact me using the channels below.</p>
 
-<div class="contact-info">
-<p>📞 Phone: +263 784088889 </p>
-<p>📧 Email: garaleleti1@gmail.com</p>
-</div>
-<div class="contact-item">
-    <i class = "fab fa-facebook"></i></i>
-    <a href="https://facebook.com/Leleti E Gara" target="_blank">🌐Facebook: Leleti E Gara</a>
-</div>
-<div class="contact-item">
-    <i class = "fab fa-instagram"></i></i>
-    <a href="https://instagram.com/Leleti E Gara" target="_blank">Instagram: Leleti E Gara</a>
-</div>
-<div class="contact-item">
-    <i class = "fab fa-whatsapp"></i></i>
-    <a href="https://wa.me/263784088889" target="_blank">Whatsapp:+263 784088889</a>
-</div>
+  <div class="card contact-info">
+   
+  <div class="social-buttons">
+    
+    <a href="https://wa.me/263784088889" target="_blank" class="social-btn whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
+    <a href="https://instagram.com/Leleti E Gara" target="_blank" class="social-btn instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
 
+    <a href="https://facebook.com/Leleti E Gara" target="_blank" class="social-btn facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="mailto:garaleleti@gmail.com" class="social-btn email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="tel:+263784088889" class="social-btn phone">
+      <i class="fas fa-phone"></i>
+    </a>
+
+</div>
+    
+
+  <div class="card">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
+<!-- JS -->
+<script src="script.js"></script>
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Leleti Esther Gara</p>
+  <p>© 2026 Leleti Gara | All Rights Reserved</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
-
-
-
