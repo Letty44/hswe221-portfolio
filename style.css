@@ -13,10 +13,12 @@
   margin-bottom: 15px;
   border: 4px solid #555;
 }
-
+.cert-card {
+  width: 200px;
+}
 .cert-card img {
-  width: 200px;       
-  height: auto;       
+  width: 100%;       /* controls size */
+  height: auto;      /* keeps proportions */  
   border-radius: 10px;
 }
 
